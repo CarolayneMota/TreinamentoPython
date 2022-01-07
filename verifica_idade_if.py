@@ -12,8 +12,6 @@ ano_atual = 2021
 idade = ano_atual - ano
 
 if idade >= 18:
-  print(f"Idade: {idade}\nMaior de idade")
-  
-if idade <	18:
+  print(f"Idade: {idade}\nMaior de idade")  
+else:
   print(f"Idade: {idade}\nMenor de idade")
-  
