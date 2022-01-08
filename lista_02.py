@@ -54,6 +54,17 @@ else:
     print(f'A letra {letra} é consoante')
 
 6-
+n1 = float(input('Informe a primeira nota: '))
+n2 = float(input('Informe a segunda nota: '))
+media = (n1+n2)/2
+if media >= 7:
+    
+    if media == 10:
+        print('Aprovado com Distinção')
+    else:
+        print('Aprovado')
+else:
+    print('Reprovado')
 
 7-
 
@@ -72,4 +83,3 @@ else:
 14-
 
 """
-
