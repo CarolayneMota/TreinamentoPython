@@ -30,6 +30,13 @@ else:
     print(f'Seu IMC é {imc} e você está com obesidade mórbida')
 
 4-
+letra = input('Informe a letra F ou M: ')
+if letra == 'F':
+    print('F - Feminino')
+elif letra == 'M':
+    print('M - Masculino')
+else:
+    print('Sexo Inválido')
 
 5-
 
@@ -52,3 +59,4 @@ else:
 14-
 
 """
+
