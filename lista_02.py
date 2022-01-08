@@ -186,5 +186,16 @@ else:
     print('Valor inválido')
 
 15-
+print('Menu\n1. Água\n2. Refrigerante\n3. Suco')
+escolha = int(input('Digite o número correspondente a bebida que você deseja: '))
+if escolha == 1:
+    print(f'Você escolheu água!')
+elif escolha ==2:
+    print(f'Você escolheu refrigerante!')
+elif escolha == 3:
+    print(f'Você escolheu suco!')
+else:
+    print('Não existe bebida correspondente ao número informado')
 
 """
+
