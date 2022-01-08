@@ -132,6 +132,15 @@ else:
         print(f'Ordem: {num3}, {num2},{num1}')
 
 11-
+turno = input(f'Em que turno você estuda?\nM-matutino ou V-Vespertino ou N- Noturno\nR: ')
+if turno == 'M':
+    print('Bom Dia!')
+elif turno == 'V':
+    print('Boa Tarde!')
+elif turno == 'N':
+    print('Boa Noite!')
+else:
+    print('Valor Inválido!')
 
 12-
 
