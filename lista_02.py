@@ -101,6 +101,15 @@ else:
         print(f'O menor número é {num1}')
 
 9-
+num1 = float(input('Informe o preço em reais do primeiro produto: '))
+num2 = float(input('Informe o preço em reais do segundo produto: '))
+num3 = float(input('Informe o preço em reais do terceiro produto: '))
+if num1 < num2 and num1 < num3:
+    print(f'O protudo 1 deve ser comprado por ter o preço R${num1}')
+elif num2 < num1 and num2 < num3:
+    print(f'O protudo 2 deve ser comprado por ter o preço R${num2}')
+else:
+    print(f'O protudo 3 deve ser comprado por ter o preço R${num3}')
 
 10-
 
