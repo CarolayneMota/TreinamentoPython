@@ -8,6 +8,11 @@ else:
     print(f'{num2} é maior que {num1}')
 
 2-
+num = float(input('Informe um número: '))
+if num > 0:
+    print(f'{num} é positivo')
+else:
+    print(f'{num} é negativo')
 
 3-
 
