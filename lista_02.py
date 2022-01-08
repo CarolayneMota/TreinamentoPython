@@ -112,6 +112,24 @@ else:
     print(f'O protudo 3 deve ser comprado por ter o preço R${num3}')
 
 10-
+num1 = float(input('Informe o primeiro número: '))
+num2 = float(input('Informe o segundo número: '))
+num3 = float(input('Informe o terceiro número: '))
+if num1 > num2 and num1 > num3:
+    if num2 < num3:
+        print(f'Ordem: {num1}, {num3},{num2}')
+    else:
+        print(f'Ordem: {num1}, {num2},{num3}')
+elif num2 > num1 and num2 > num3:
+    if num1 < num3:
+        print(f'Ordem: {num2}, {num3},{num1}')
+    else:
+        print(f'Ordem: {num2}, {num1},{num3}')
+else:
+    if num2 < num1:
+        print(f'Ordem: {num3}, {num1},{num2}')
+    else:
+        print(f'Ordem: {num3}, {num2},{num1}')
 
 11-
 
