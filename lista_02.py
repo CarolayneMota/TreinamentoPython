@@ -150,8 +150,40 @@ else:
     print(f'O número {num} é impar')
 
 13-
+n1 = float(input('Informe a primeira nota: '))
+n2 = float(input('Informe a segunda nota: '))
+media = (n1+n2)/2
+if media <= 10 and media > 9:
+    print(f'Média: {media}\nConceito: A')
+elif media <= 9 and media > 7.5:
+    print(f'Média: {media}\nConceito: B')
+elif media <= 7.5 and media > 6:
+    print(f'Média: {media}\nConceito: C')
+elif media <= 6 and media > 4:
+    print(f'Média: {media}\nConceito: D')
+elif media <= 4 and media > 0:
+    print(f'Média: {media}\nConceito: E')
+else:
+    print('Não possui conceito')
 
 14-
+dia = int(input('Informe um número de 1 à 7: '))
+if dia == 1:
+    print('1 - Domingo')
+elif dia == 2:
+    print('2 - Segunda')
+elif dia == 3:
+    print('3 - Terça')
+elif dia == 4:
+    print('4 - Quarta')
+elif dia == 5:
+    print('5 - Quinta')
+elif dia == 6:
+    print('6 - Sexta')
+elif dia == 7:
+    print('7 - Sábado')
+else:
+    print('Valor inválido')
 
 15-
 
