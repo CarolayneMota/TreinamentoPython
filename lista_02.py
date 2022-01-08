@@ -15,6 +15,19 @@ else:
     print(f'{num} é negativo')
 
 3-
+peso = float(input('Informe o peso em Kg: '))
+h = float(input('Informe a altura em m: '))
+imc = peso/(h**2)
+if imc < 18.5:
+    print(f'Seu IMC é {imc} e você está abaixo do peso')
+elif imc >= 18.5 and imc < 25:
+    print(f'Seu IMC é {imc} e você está no peso ideal')
+elif imc >= 25 and imc < 30:
+    print(f'Seu IMC é {imc} e você está com sobrepeso')
+elif imc >= 30 and imc < 40:
+    print(f'Seu IMC é {imc} e você está com obesidade')
+else:
+    print(f'Seu IMC é {imc} e você está com obesidade mórbida')
 
 4-
 
