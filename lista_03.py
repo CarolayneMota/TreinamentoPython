@@ -10,6 +10,14 @@ for i in range(5):
 print(f'Lista: {lista}')
 
 2-
+Faça um Programa que leia 10 números reais, insira em uma lista e
+mostre-os na ordem crescente (use a função sort())
+lista = []
+for i in range(10):
+    num = float(input('Informe um número: '))
+    lista.append(num)
+lista.sort()
+print(f'Lista: {lista}')
 
 3-
 
@@ -33,4 +41,3 @@ print(f'Lista: {lista}')
 2-
 
 """
-
