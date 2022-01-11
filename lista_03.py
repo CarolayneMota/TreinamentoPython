@@ -68,7 +68,8 @@ for i in range(1, 21):
     print(i)
 
 6-
-
+Faça um programa que leia 5 números e informe o maior número.(Dica: Use
+lista, função .sort() e indexação negativa (pegar i item [-1]))
 7-
 
 8-
