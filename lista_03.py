@@ -38,19 +38,27 @@ print(f'A media é {media}')
 
 4-
 Faça um Programa que peça o nome, a idade e a altura de N pessoas,
-armazene cada informação em uma lista e depois insira em uma lista maior
+armazene cada informação em uma lista e depois insira em uma lista maior chamada lista_pessoas. 
+Por fim, imprima o nome e peso de cada pessoa, e diga se ela é maior ou menor de idade.
 
-dados = []
+lista_pessoas = []
 qtd_pessoas = int(input('Informe a quantidade de pessoass que vai cadastra: '))
 for  i in range(qtd_pessoas):
-    dados.append([])
+    lista_pessoas.append([])
     nome = input('Informe o nome: ')
-    dados[i].append(nome)
+    lista_pessoas[i].append(nome)
     idade = int(input('Informe a idade: '))
-    dados[i].append(idade)
+    lista_pessoas[i].append(idade)
     altura = float(input('Informe a altura: '))
-    dados[i].append(altura)
-print(f'Dados: {dados}')
+    lista_pessoas[i].append(altura)
+print(f'Dados: {lista_pessoas}')
+
+for i in range(qtd_pessoas):
+    if lista_pessoas[i][1] > 18:
+        print(f'{lista_pessoas[i][0]} é maior de idade!')
+    else:
+        print(f'{lista_pessoas[i][0]} é menor de idade!')
+
 
 5-
 
