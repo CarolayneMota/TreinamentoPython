@@ -37,6 +37,20 @@ media = soma/n
 print(f'A media é {media}')
 
 4-
+Faça um Programa que peça o nome, a idade e a altura de N pessoas,
+armazene cada informação em uma lista e depois insira em uma lista maior
+
+dados = []
+qtd_pessoas = int(input('Informe a quantidade de pessoass que vai cadastra: '))
+for  i in range(qtd_pessoas):
+    dados.append([])
+    nome = input('Informe o nome: ')
+    dados[i].append(nome)
+    idade = int(input('Informe a idade: '))
+    dados[i].append(idade)
+    altura = float(input('Informe a altura: '))
+    dados[i].append(altura)
+print(f'Dados: {dados}')
 
 5-
 
