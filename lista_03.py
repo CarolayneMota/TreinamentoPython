@@ -98,6 +98,9 @@ for i in range(x+1, y):
 9-
 Faça um programa que, dado um conjunto de N números, determine o menor
 valor, o maior valor e a soma dos valores.
+v = [2, 5, 7, 10, 4]
+v.sort()
+print(f'Menor valor: {v[0]}\nMaior valor: {v[-1]}\nSoma: {v[0]} + {v[-1]} = {v[0] + v[-1]}')
 
 10 -
 Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer
