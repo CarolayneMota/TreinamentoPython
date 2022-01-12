@@ -120,6 +120,18 @@ else:
 A série de Fibonacci é formada pela sequência 1,1,2,3,5,8,13,21,34,55,... Faça
 um programa capaz de gerar a série até o N ésimo termo., onde N é inserido pelo
 usuário.
+print('Sequência de Fibonacci')
+n = int(input('Informe o limete superior: '))
+d1 = 0
+d2 = 1
+d3 = d1 + d2
+print(f'{d2} -> {d3}', end='')
+while n > d3:
+    d1 = d2
+    d2 = d3
+    d3 = d1 + d2
+    print(f' -> {d3}', end='')
+print('\n')
 
 2-
 Faça um programa que crie uma matriz NxN, insira os valores e imprima em
