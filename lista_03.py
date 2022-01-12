@@ -90,6 +90,10 @@ for i in range(1, 51):
 Faça um programa que receba dois números inteiros e gere os números
 inteiros que estão no intervalo compreendido por eles.(Use range de
 intervalos (range(x, y)))
+x = int(input('Informe um número para iniciar o intervalo: '))
+y = int(input('Informe um número para finalizar o intervalo: '))
+for i in range(x+1, y):
+    print(i)
 
 9-
 Faça um programa que, dado um conjunto de N números, determine o menor
