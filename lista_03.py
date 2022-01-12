@@ -80,6 +80,11 @@ print(f'Entre os números informados {v[-1]} é o maior')
 7-
 Faça um programa que imprima na tela apenas os números ímpares entre 1
 e 50.(Use range de intervalos (range(x, y)))
+for i in range(1, 51):
+    if i % 2 == 0:
+        pass
+    else:
+        print(i)
 
 8-
 Faça um programa que receba dois números inteiros e gere os números
