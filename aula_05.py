@@ -37,9 +37,8 @@ print(f'Lista: {lista}')
 lista.sort()
 print(f'Lista ordenada: {lista}')
 print(f'{lista[0]} + {lista[-1]} = {lista[0] + lista[-1]}')
-"""
 
-
+------ Calculadora -----------
 def soma(num1, num2):
     return num1 + num2
 
@@ -76,3 +75,30 @@ elif opcao == "*":
     print(f'{num1} * {num2} == {valor_mult}')
 else:
     print('Opção invalida')
+
+2 - Faça um programa, com uma função que necessite de três argumentos, e que forneça a soma desses 
+três argumentos.
+
+def soma_tres(num1, num2, num3):
+    return num1 + num2 + num3
+
+print(f'soma_tres(1, 2, 3): ', soma_tres(1, 2, 3))
+
+3 - Faça uma função que receba uma lista, percorra a lista e some a quantidade de números pares dessa lista 
+e retorne a  soma. Imprimir a lista e o resultado da soma ao final do código.
+
+def qtd_par_lista(lista):
+    qtd_par = 0
+    for i in range(len(lista)):
+        if lista[i] % 2 == 0:
+            qtd_par += 1
+        else:
+            pass
+    return qtd_par
+
+lista = [1,2,3,2,1,2,3,4,5,6,5,4,3,2,1,8,10,12]
+pares = qtd_par_lista(lista)
+print(f'Lista: {lista}\nQuantidade de números pares: {pares}')
+
+"""
+
