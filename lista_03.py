@@ -106,11 +106,19 @@ print(f'Menor valor: {v[0]}\nMaior valor: {v[-1]}\nSoma: {v[0]} + {v[-1]} = {v[0
 Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer
 número inteiro entre 1 a 10. O usuário deve informar de qual número ele
 deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+print('\tGerador de tabuada')
+num = int(input('Informe um número inteiro entre 1 a 10: '))
+if num >= 1 and num <= 10:
+    print(f'Tabuada de {num}:')
+    for i in range(1,11):
+        print(f'{num} x {i} = {num * i}')
+else:
+    print('Número invalido')
 
 ----------Desafios----------
 1-
 A série de Fibonacci é formada pela sequência 1,1,2,3,5,8,13,21,34,55,... Faça
-um programa capaz de gerar a série até o N−ésimo termo., onde N é inserido pelo
+um programa capaz de gerar a série até o N ésimo termo., onde N é inserido pelo
 usuário.
 
 2-
