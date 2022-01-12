@@ -70,17 +70,39 @@ for i in range(1, 21):
 6-
 Faça um programa que leia 5 números e informe o maior número.(Dica: Use
 lista, função .sort() e indexação negativa (pegar i item [-1]))
+v = []
+for i in range(5):
+    num = float(input('Informe um número: '))
+    v.append(num)
+v.sort()
+print(f'Entre os números informados {v[-1]} é o maior')
+
 7-
+Faça um programa que imprima na tela apenas os números ímpares entre 1
+e 50.(Use range de intervalos (range(x, y)))
 
 8-
+Faça um programa que receba dois números inteiros e gere os números
+inteiros que estão no intervalo compreendido por eles.(Use range de
+intervalos (range(x, y)))
 
 9-
+Faça um programa que, dado um conjunto de N números, determine o menor
+valor, o maior valor e a soma dos valores.
 
 10 -
+Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer
+número inteiro entre 1 a 10. O usuário deve informar de qual número ele
+deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
 
 ----------Desafios----------
 1-
+A série de Fibonacci é formada pela sequência 1,1,2,3,5,8,13,21,34,55,... Faça
+um programa capaz de gerar a série até o N−ésimo termo., onde N é inserido pelo
+usuário.
 
 2-
+Faça um programa que crie uma matriz NxN, insira os valores e imprima em
+formato de matriz.
 
 """
