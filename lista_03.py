@@ -136,5 +136,24 @@ print('\n')
 2-
 Faça um programa que crie uma matriz NxN, insira os valores e imprima em
 formato de matriz.
+# para construir a matriz
+dim = int(input('Informe as dimensões da matriz: '))
+matriz = []
+for i in range(dim):
+    matriz.append([])
+    for j in range(dim):
+        num = int(input('Número: '))
+        matriz[i].append(num)
+print('\nMatriz')
+# para imprimir a matriz
+linhas = len(matriz)
+colunas = len(matriz[0])
+for i in range(linhas):
+    for j in range(colunas):
+        if j == colunas - 1:
+            print(f'{matriz[i][j]}', end="")
+        else:
+            print(f'{matriz[i][j]}', end=' ')
+    print()
 
 """
