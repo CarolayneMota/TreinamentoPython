@@ -34,7 +34,7 @@ objeto_animal = Animal(nome, idade)
 #print(f'Animal com nome {objeto_animal.nome} e idade {objeto_animal.idade}')
 print(objeto_animal)
 
-"""
+1 - 
 class Pessoa():
     def __init__(self, cpf, nome, idade, cidade, genero):
         self.cpf = cpf
@@ -70,3 +70,7 @@ pessoa.estudar('Python')
 pessoa.dormir()
 pessoa.jogar()
 print(pessoa)
+
+
+Executaveu: https://pypi.org/project/auto-py-to-exe/ 
+"""
