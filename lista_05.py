@@ -149,7 +149,7 @@ def peso_ideal(alt, sexo):
 print(peso_ideal(1.7,'F'))
 print(peso_ideal(1.7,'M'))
 
-
+pip install matplotlib
 Desafios
 1 -
 
