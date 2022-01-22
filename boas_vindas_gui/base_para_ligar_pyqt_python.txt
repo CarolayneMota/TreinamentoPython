@@ -1,0 +1,16 @@
+# Importa as bibliotecas
+from PyQt6 import uic, QtWidgets
+
+# Criando a aplicação princial
+app = QtWidgets.QApplication([])
+
+# Carrego a ui - Link
+Form, Window  = uic.loadUiType("boas_vindas_gui/tela.ui")
+
+# Criar a Window() - Janela
+window = Window()
+formulario = Form()
+formulario.setupUi(window)
+
+window.show()
+app.exec()

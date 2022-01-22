@@ -27,6 +27,12 @@ Tela(root)
 # Event Loop: verifica constantemente se outro evento foi acionado 
 root.mainloop() # exibe a GUI
 
+Após # Criando um objeto do tipo TK()
+root = Tk()
+root.title("Nome que que colocar no programa")
+
+https://www.geeksforgeeks.org/create-table-using-tkinter/
+
 """
 
 # Etapas padrão do tkinter (cria a tela basica, a casca)
