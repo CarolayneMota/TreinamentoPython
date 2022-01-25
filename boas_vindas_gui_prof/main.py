@@ -5,12 +5,16 @@ def boas_vindas():
     nome = formulario.txt_nome.text()
     formulario.lbl_resultado.setText(f"Bem-vind@ {nome}")
 
+def limpar():
+    formulario.lbl_resultado.setText(f"Clicou em limpar")
+    formulario.txt_nome.setText("")
+
 # Criando a aplicação princial
 app = QtWidgets.QApplication([])
 
 # Carrego a ui - Link
 # Retorna: Formulário com os componentes; Window é a janela com form
-Form, Window  = uic.loadUiType("modulo-2/boas_vindas_gui/tela.ui")
+Form, Window  = uic.loadUiType("tela.ui")
 
 # Criar a Window() - Janela
 janela = Window()
@@ -20,6 +24,7 @@ formulario = Form()
 formulario.setupUi(janela)
 
 formulario.btn_enviar.clicked.connect(boas_vindas)
+formulario.btn_limpar.clicked.connect(limpar)
 
 janela.show()
 app.exec()

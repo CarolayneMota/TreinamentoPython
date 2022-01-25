@@ -1,16 +1,15 @@
 # Importa as bibliotecas
 from PyQt6 import uic, QtWidgets
-
-def boas_vindas():
-    nome = formulario.txt_nome.text()
-    formulario.lbl_resultado.setText(f"Bem-vind@ {nome}")
+import funcoes
+def click_btn_somar():
+    funcoes.somar(formulario)
 
 # Criando a aplicação princial
 app = QtWidgets.QApplication([])
 
 # Carrego a ui - Link
 # Retorna: Formulário com os componentes; Window é a janela com form
-Form, Window  = uic.loadUiType("modulo-2/boas_vindas_gui/tela.ui")
+Form, Window  = uic.loadUiType("modulo-2/soma/tela.ui")
 
 # Criar a Window() - Janela
 janela = Window()
@@ -19,7 +18,8 @@ formulario = Form()
 # link janela -> formulário
 formulario.setupUi(janela)
 
-formulario.btn_enviar.clicked.connect(boas_vindas)
+formulario.btn_somar.clicked.connect(lambda: funcoes.somar(formulario))
+# formulario.btn_somar.clicked.connect(click_btn_somar)
 
 janela.show()
 app.exec()
