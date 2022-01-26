@@ -1,15 +1,13 @@
 # Importa as bibliotecas
 from PyQt6 import uic, QtWidgets
 import funcoes
-def click_btn_somar():
-    funcoes.somar(formulario)
 
 # Criando a aplicação princial
 app = QtWidgets.QApplication([])
 
 # Carrego a ui - Link
 # Retorna: Formulário com os componentes; Window é a janela com form
-Form, Window  = uic.loadUiType("calculadora\calc.ui")
+Form, Window  = uic.loadUiType("calculadora/calc.ui")
 
 # Criar a Window() - Janela
 janela = Window()
