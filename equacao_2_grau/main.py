@@ -1,18 +1,22 @@
+# Importa as bibliotecas
+from PyQt6 import uic, QtWidgets
 import equacao2 as eq
-import math
 
+# Criando a aplicação princial
+app = QtWidgets.QApplication([])
 
-a = float(input('Digite o valor de a = '))
-b = float(input('Digite o valor de b = '))
-c = float(input('Digite o valor de c = '))
-if a !=0:
-    delta = math.pow(b,2) - 4 * a * c
-    if delta < 0:
-        print(f'{a}x^2 + {b}x + {c} = 0\n')
-        print(eq.menor_zero()) 
-    elif delta == 0:
-        print(eq.igual_zero(a, b, c))
-    else:
-        print(eq.bhaskara(a, b, c))
-else:
-    print('Não é equação do segundo grau')
+# Carrego a ui - Link
+# Retorna: Formulário com os componentes; Window é a janela com form
+Form, Window = uic.loadUiType("equacao_2_grau/raizes.ui")
+
+# Criar a Window() - Janela
+janela = Window()
+# Cria o formulário para ter acesso aos componentes
+formulario = Form()
+# link janela -> formulário
+formulario.setupUi(janela)
+
+formulario.btn_resolver.clicked.connect(lambda: eq.bhaskara(formulario))
+
+janela.show()
+app.exec()
